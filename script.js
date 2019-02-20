@@ -42,8 +42,13 @@ function randomQuote(quotes) {
 	let random = randomNum(48) // 48 quotes in response
 	let currentQuote = `<h3 class="quote">"${quotes[random]}"<p>-Donald J. Trump</p></h3>`
 	colorPicker();
+	trumpMug();
 	$('#container').append(currentQuote)
 	
 
+}
+
+function trumpMug() {
+	$('#mug').css({filter:`hue-rotate(${randomNum(360)}deg)`}) // neat way of changing the hue randomly
 }
 
