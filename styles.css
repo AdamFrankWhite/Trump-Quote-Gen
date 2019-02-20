@@ -17,6 +17,14 @@ body {
 	overflow: auto; /* prevents collapsed margin */
 }
 
+#mug {
+	display: block;
+	width: 30%;
+	margin: auto;
+	border-radius: 10px;
+	margin-top: 1em;
+}
+
 h1 {
 	font-size: 1.5em;
 }
@@ -54,6 +62,10 @@ p {
 	#container {
 		width: 75%;
 	}
+	
+	#mug {
+		width: 20%;
+	}
 }
 
 @media (min-width: 768px) {
@@ -67,5 +79,10 @@ p {
 	#container {
 		width: 60%;
 	}
+	
+	#mug {
+		width: 15%;
+	}
+	
 }
 	
