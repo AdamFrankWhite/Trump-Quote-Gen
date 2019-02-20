@@ -5,20 +5,25 @@
 body {
 	text-align: center;
 	font-family: Montserrat;
+	font-size: 1em;
 }
 
 #container {
 	width: 90%;
-	height: 300px;
+	/* no height set, to keep div same size as containing text */
 	margin: auto;
 	border-radius: 15px;
-	margin-top: 1.5em;
+	margin-top: 1em;
 	overflow: auto; /* prevents collapsed margin */
+}
+
+h1 {
+	font-size: 1.5em;
 }
 
 h2 {
 	font-style: italic;
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 .quote {
@@ -26,12 +31,41 @@ h2 {
 	width: 80%;
 	margin: auto;
 	margin-top: 2em;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 p {
 	text-align: right;
 	font-style: italic;
+	font-size: 0.7em;
 }
 
+/* ==== Media Queries ==== */
+
+@media (min-width: 420px) {
+	body {
+		font-size: 1.25em; /* rest of fonts adjust from this */
+	}
+	
+	.quote {
+		font-size: 0.7em;
+	}
+	
+	#container {
+		width: 75%;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 1.4em;
+	}
+	 
+	.quote {
+		font-size: 0.7em;
+	}		
+	#container {
+		width: 60%;
+	}
+}
 	
