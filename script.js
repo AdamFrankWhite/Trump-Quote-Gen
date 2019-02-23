@@ -33,7 +33,7 @@ function colorPicker() {
 	let random = randomNum(50) // 50 colors in array
 	var randomColor = colors[random]
 	$('#container').empty().css({backgroundColor:randomColor});
-	return randomColor
+	
 
 }
 
