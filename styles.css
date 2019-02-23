@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	line-height: 1.2;
 }
 
 body {
@@ -8,12 +9,26 @@ body {
 	font-size: 1em;
 }
 
+main {
+	height: 100vh;
+	border: black 5px solid;
+	border-radius: 5px;
+}
+
+button {
+	background-color: #f4c242;
+	color: black;
+	font-family: inherit;
+	font-weight: bold;
+}
+
 #container {
 	width: 90%;
 	/* no height set, to keep div same size as containing text */
 	margin: auto;
 	border-radius: 15px;
 	margin-top: 1em;
+	margin-bottom: 1em;
 	overflow: auto; /* prevents collapsed margin */
 }
 
@@ -25,25 +40,39 @@ body {
 	margin-top: 1em;
 }
 
+
 h1 {
-	font-size: 1.5em;
+	font-size: 1.4em;
+	background-color: #42c8f4;
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+	margin-bottom: 1em;
 }
 
 h2 {
+	display: block;
 	font-style: italic;
-	font-size: 0.8em;
+	font-size: 0.7em;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 0.5em;
 }
 
 .quote {
 	display: block;
 	width: 80%;
 	margin: auto;
-	margin-top: 2em;
-	font-size: 0.9em;
+	margin-top: 1em;
+	margin-bottom: 1em;	
+	font-size: 0.7em;
+	font-weight: bold;
 }
 
 p {
 	text-align: right;
+	padding-top: 0.5em;
 	font-style: italic;
 	font-size: 0.7em;
 }
