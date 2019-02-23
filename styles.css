@@ -43,8 +43,7 @@ button {
 
 h1 {
 	font-size: 1.4em;
-	/* background-color: #42c8f4; */
-	background-color: red;
+	background-color: #42c8f4;
 	width: 100%;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -68,7 +67,7 @@ h2 {
 	margin: auto;
 	margin-top: 1em;
 	margin-bottom: 1em;	
-	font-size: 1.8em;
+	font-size: 0.8em;
 	font-weight: bold;
 }
 
@@ -87,7 +86,7 @@ p {
 	}
 	
 	.quote {
-		font-size: 1.7em;
+		font-size: 0.7em;
 	}
 	
 	#container {
