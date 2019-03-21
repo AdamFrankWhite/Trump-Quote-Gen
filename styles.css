@@ -3,6 +3,8 @@
 	line-height: 1.2;
 }
 
+/* === IDs === */
+
 #container {
 	text-align: center;
 	font-family: 'Slabo 27px', serif;
@@ -14,6 +16,25 @@
 	margin: auto;
 }
 
+#mug {
+	display: block;
+	width: 30%;
+	margin: auto;
+	border-radius: 10px;
+	margin-top: 1em;
+}
+
+#quoteContainer {
+	width: 90%;
+	/* no height set, to keep div same size as containing text */
+	margin: auto;
+	border-radius: 15px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	overflow: auto; /* prevents collapsed margin */
+}
+
+/* ==== Elements ==== */
 
 main {
 	height: 100vh;
@@ -28,25 +49,6 @@ button {
 	font-weight: bold;
 }
 
-#quoteContainer {
-	width: 90%;
-	/* no height set, to keep div same size as containing text */
-	margin: auto;
-	border-radius: 15px;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	overflow: auto; /* prevents collapsed margin */
-}
-
-#mug {
-	display: block;
-	width: 30%;
-	margin: auto;
-	border-radius: 10px;
-	margin-top: 1em;
-}
-
-
 h1 {
 	font-size: 1.5em;
 	width: 100%;
@@ -55,8 +57,6 @@ h1 {
 	font-weight: bold;
 	top: 0;
 }
-
-
 
 h2 {
 	display: block;
@@ -68,6 +68,15 @@ h2 {
 	margin-bottom: 0.5em;
 }
 
+p {
+	text-align: right;
+	padding-top: 0.5em;
+	font-style: italic;
+	font-size: 0.7em;
+}
+
+/* ==== Classes ==== */
+
 .quote {
 	display: block;
 	width: 80%;
@@ -76,13 +85,6 @@ h2 {
 	margin-bottom: 1em;	
 	font-size: 0.8em;
 	font-weight: bold;
-}
-
-p {
-	text-align: right;
-	padding-top: 0.5em;
-	font-style: italic;
-	font-size: 0.7em;
 }
 
 /* ==== Media Queries ==== */

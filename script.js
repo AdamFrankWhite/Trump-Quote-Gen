@@ -1,3 +1,5 @@
+// ==== VARIABLES ====
+
 var colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -7,22 +9,24 @@ var colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 		  '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680', 
 		  '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
 		  '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
-		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
+		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'
+		];
+		
+var container = $('#container')
+$("button").on('click', function(){
+  randomQuote(quotes);
+});
 		  
-// randomQuote();
+// === AJAX request ====
 
 $.ajax({url: "https://api.whatdoestrumpthink.com/api/v1/quotes", type: 'GET', success: function(result){
     quotes = result.messages.non_personalized;
 	colorPicker(); //change background color randomly on click
 	randomQuote(quotes);
-	
   }
-  })
-
-var container = $('#container')
-$("button").on('click', function(){
-  randomQuote(quotes);
 });
+
+// ==== Functions ==== 
 
 function randomNum(num) {
 	var randomNum = Math.floor(Math.random() * Math.floor(num) );
@@ -33,10 +37,7 @@ function colorPicker() {
 	let random = randomNum(50) // 50 colors in array
 	var randomColor = colors[random]
 	$('#quoteContainer').empty().css({backgroundColor:randomColor});
-	
-
 }
-
 
 function randomQuote(quotes) {
 	let random = randomNum(48) // 48 quotes in response
@@ -44,8 +45,6 @@ function randomQuote(quotes) {
 	colorPicker();
 	trumpMug();
 	$('#quoteContainer').append(currentQuote)
-	
-
 }
 
 function trumpMug() {
