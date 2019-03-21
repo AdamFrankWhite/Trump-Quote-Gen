@@ -32,7 +32,7 @@ function randomNum(num) {
 function colorPicker() {
 	let random = randomNum(50) // 50 colors in array
 	var randomColor = colors[random]
-	$('#container').empty().css({backgroundColor:randomColor});
+	$('#quoteContainer').empty().css({backgroundColor:randomColor});
 	
 
 }
@@ -43,7 +43,7 @@ function randomQuote(quotes) {
 	let currentQuote = `<h3 class="quote">"${quotes[random]}"<p>-Donald J. Trump</p></h3>`
 	colorPicker();
 	trumpMug();
-	$('#container').append(currentQuote)
+	$('#quoteContainer').append(currentQuote)
 	
 
 }
