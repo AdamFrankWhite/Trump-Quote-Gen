@@ -111,15 +111,19 @@ p {
 	}
 
 	.quote {
-		font-size: 0.7em;
+		font-size: 0.8em;
 	}
 	#container {
 		width: 90%;
 	}
 
+	#quoteContainer {
+		width: 75%
+	}
+
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 	#container {
 		font-size: 1.2em;
 		display: flex;
@@ -129,10 +133,10 @@ p {
 	}
 
 	#quoteContainer {
-		width: 65%;
-		font-size: 1.4em;
+		width: 70%;
+		font-size: 1.3em;
 		margin-top: 0;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	#mug {
