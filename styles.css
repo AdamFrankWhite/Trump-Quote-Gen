@@ -16,10 +16,6 @@
 	margin: auto;
 }
 
-#heading {
-	margin: 0 auto;
-}
-
 #mug {
 	display: block;
 	height: 40%;
@@ -57,10 +53,14 @@ button {
 h1 {
 	font-size: 1.5em;
 	width: 100%;
-	padding-top: 1em;
-	padding-bottom: 0.25em;
+	padding: 1em;
+	margin-bottom: 0.5em;
 	font-weight: bold;
 	top: 0;
+	text-decoration: underline;
+	color: #5cdb95;
+	background-color: #05386b;
+
 }
 
 h2 {
