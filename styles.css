@@ -20,9 +20,8 @@
 	display: block;
 	height: 40%;
 	width: auto;
-	margin: auto;
+	margin: 1em auto;
 	border-radius: 10px;
-	margin-top: 1em;
 }
 
 #quoteContainer {
@@ -48,6 +47,7 @@ button {
 	color: black;
 	font-family: inherit;
 	font-weight: bold;
+	margin-top: 1em;
 }
 
 h1 {
@@ -70,7 +70,7 @@ h2 {
 	font-size: 0.7em;
 	width: 70%;
 	margin: auto;
-	margin-bottom: 0.5em;
+	margin-bottom: 0;
 }
 
 p {
@@ -139,9 +139,6 @@ p {
 		margin-bottom: 1em;
 	}
 
-	#mug {
-		margin-top: 50px;
-	}
 
 	h2 {
 		margin-top: 0.5em;
@@ -150,7 +147,6 @@ p {
 	button {
 		width: 100px;
 		font-size: 0.8em;
-		margin: auto;
 	}
 
 }
